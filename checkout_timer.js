@@ -35,4 +35,8 @@ window.onload = function () {
     document.getElementsByClassName('main__header')[0].appendChild(discount);
     var shipping = create('<div style="font-size:0.75em;">Note: ﻿Once you place your order, please allow 3-5 business days to process your orders. After that, it will take 12 - 20 business days for delivery in the United States, and 15-30 business days for international orders (depending on location).</div>');
     document.getElementsByClassName('order-summary__sections')[0].appendChild(shipping);
+
+    var ten = 60 * 10,
+    display = document.querySelector('#time');
+    startTimer(ten, display);
 };
