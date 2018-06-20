@@ -40,7 +40,7 @@ window.onload = function () {
     // display = document.querySelector('#time');
     // startTimer(ten, display);
 
-    var badges = create('<div><img src="https://raw.githubusercontent.com/bugleb/shopify_timer/20561e0c37900efe3b440b9eb6d36250210b2e66/safe_checkout.png" /></div>');
+    var badges = create('<div style="text-align:center;"><img style="max-width:400px;" src="https://raw.githubusercontent.com/bugleb/shopify_timer/20561e0c37900efe3b440b9eb6d36250210b2e66/safe_checkout.png" /></div>');
     // document.getElementsByClassName('order-summary__sections')[0].appendChild(badges);
     document.getElementsByClassName('alt-payment-list-container')[0].appendChild(badges);
 };
