@@ -44,7 +44,12 @@ window.onload = function () {
     // document.getElementsByClassName('order-summary__sections')[0].appendChild(badges);
     document.getElementsByClassName('alt-payment-list-container')[0].appendChild(badges);
 
-    // var payments = document.getElementsByClassName('alt-payment-list-container');
-    // console.log('payments', payments);
-    // payments[0].parentElement.innerHTML = "test";
+    var payments = document.getElementsByClassName('alt-payment-list-container');
+    console.log('payments', payments);
+    var paymentsParent = payments[0].parentElement;
+    var div = document.createElement('div');
+    var span = document.createElement('span');
+    span.innerHTML = 'We offer Google Pay and PayPal for your convenience. You may also pay using a credit card by entering your shipping address and clicking "Continue to shipping method".';
+    div.append(span);
+    paymentsParent.prepend(div);
 };
