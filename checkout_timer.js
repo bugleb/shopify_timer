@@ -44,6 +44,6 @@ window.onload = function () {
     // document.getElementsByClassName('order-summary__sections')[0].appendChild(badges);
     document.getElementsByClassName('alt-payment-list-container')[0].appendChild(badges);
 
-    var shipping = document.getElementsByClassName('order-summary__emphasis');
-    shipping.style.color = "#E94F37";
+    var payments = document.getElementsByClassName('alt-payment-list-container');
+    console.log('payments', payments);
 };
