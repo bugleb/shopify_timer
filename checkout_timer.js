@@ -52,5 +52,6 @@ window.onload = function () {
     span.innerHTML = 'We offer <strong>Google Pay</strong> and <strong>PayPal</strong> for your convenience. You may also pay using a credit card by entering your shipping address and clicking "Continue to shipping method".';
     div.append(span);
     div.style.marginTop = '20px';
+    div.style.marginBottom = '20px';
     paymentsParent.prepend(div);
 };
