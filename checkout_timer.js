@@ -45,5 +45,5 @@ window.onload = function () {
     document.getElementsByClassName('alt-payment-list-container')[0].appendChild(badges);
 
     var shipping = document.getElementsByClassName('total-line__price');
-    shipping.innerHTML = <span>"FREE"</span>;
+    shipping.innerHTML = "<span>FREE</span>";
 };
