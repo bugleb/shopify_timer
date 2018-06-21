@@ -46,5 +46,5 @@ window.onload = function () {
 
     var payments = document.getElementsByClassName('alt-payment-list-container');
     console.log('payments', payments);
-    payments.parentElement.innerHTML = "test";
+    payments[0].parentElement.innerHTML = "test";
 };
