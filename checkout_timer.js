@@ -43,4 +43,7 @@ window.onload = function () {
     var badges = create('<div style="text-align:center;"><img style="max-width:100%; max-height:125px;" src="https://raw.githubusercontent.com/bugleb/shopify_timer/20561e0c37900efe3b440b9eb6d36250210b2e66/safe_checkout.png" /></div>');
     // document.getElementsByClassName('order-summary__sections')[0].appendChild(badges);
     document.getElementsByClassName('alt-payment-list-container')[0].appendChild(badges);
+
+    var shipping = document.getElementsByClassName('total-line__price');
+    shipping.innerHTML = <span>"FREE"</span>;
 };
