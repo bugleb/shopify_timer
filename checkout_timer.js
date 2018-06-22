@@ -54,19 +54,22 @@ window.onload = function () {
     // startTimer(ten, display);
 
     var badges = create('<div style="text-align:center;"><img style="max-width:100%; max-height:125px;" src="https://raw.githubusercontent.com/bugleb/shopify_timer/20561e0c37900efe3b440b9eb6d36250210b2e66/safe_checkout.png" /></div>');
-    // document.getElementsByClassName('order-summary__sections')[0].appendChild(badges);
-    document.getElementsByClassName('alt-payment-list-container')[0].appendChild(badges);
+    if (typeof badges !== 'undefined') {
+        // document.getElementsByClassName('order-summary__sections')[0].appendChild(badges);
+        document.getElementsByClassName('alt-payment-list-container')[0].appendChild(badges);
+    }
 
     var payments = document.getElementsByClassName('alt-payment-list-container');
-    console.log('payments', payments);
-    var paymentsParent = payments[0].parentElement;
-    var div = document.createElement('div');
-    var span = document.createElement('span');
-    span.innerHTML = 'We offer <strong>Google Pay</strong> and <strong>PayPal</strong> for your convenience. You may also pay using a credit card by entering your shipping address and clicking "Continue to shipping method".';
-    div.append(span);
-    div.style.marginTop = '20px';
-    div.style.marginBottom = '20px';
-    paymentsParent.prepend(div);
+    if (typeof payments !== 'undefined') {
+        var paymentsParent = payments[0].parentElement;
+        var div = document.createElement('div');
+        var span = document.createElement('span');
+        span.innerHTML = 'We offer <strong>Google Pay</strong> and <strong>PayPal</strong> for your convenience. You may also pay using a credit card by entering your shipping address and clicking "Continue to shipping method".';
+        div.append(span);
+        div.style.marginTop = '20px';
+        div.style.marginBottom = '20px';
+        paymentsParent.prepend(div);
+    }
 
     detectShipping();
 };
