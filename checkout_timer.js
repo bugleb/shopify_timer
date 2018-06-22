@@ -57,6 +57,7 @@ window.onload = function () {
 
     function detectShipping () {
         var shippingLabel = document.getElementsByClassName('radio__label__primary');
+        console.log('label', shippingLabel):
 
         if (typeof shippingLabel === 'undefined') {
             setTimeout(detectShipping, 100);
