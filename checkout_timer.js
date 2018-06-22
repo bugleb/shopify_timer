@@ -53,12 +53,12 @@ window.onload = function () {
     // display = document.querySelector('#time');
     // startTimer(ten, display);
 
-    var badges = create('<div style="text-align:center;"><img style="max-width:100%; max-height:125px;" src="https://raw.githubusercontent.com/bugleb/shopify_timer/20561e0c37900efe3b440b9eb6d36250210b2e66/safe_checkout.png" /></div>');
-    // document.getElementsByClassName('order-summary__sections')[0].appendChild(badges);
-    var altPaymentList = document.getElementsByClassName('alt-payment-list-container');
-    if (typeof altPaymentList !== 'undefined') {
-        altPaymentList[0].appendChild(badges);
-    }
+    // var badges = create('<div style="text-align:center;"><img style="max-width:100%; max-height:125px;" src="https://raw.githubusercontent.com/bugleb/shopify_timer/20561e0c37900efe3b440b9eb6d36250210b2e66/safe_checkout.png" /></div>');
+    // // document.getElementsByClassName('order-summary__sections')[0].appendChild(badges);
+    // var altPaymentList = document.getElementsByClassName('alt-payment-list-container');
+    // if (typeof altPaymentList !== 'undefined') {
+    //     altPaymentList[0].appendChild(badges);
+    // }
 
     var payments = document.getElementsByClassName('alt-payment-list-container');
     if (typeof payments !== 'undefined') {
