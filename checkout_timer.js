@@ -65,4 +65,6 @@ window.onload = function () {
             shippingLabel[0].innerHTML = '<strong>Standard Shipping</strong><span class="radio__label__primary" data-shipping-method-label-title="Standard Shipping">12 - 20 days for delivery in the United States, and 15-40 days for international orders (depending on location).</span>';
         }
     }
+
+    detectShipping();
 };
