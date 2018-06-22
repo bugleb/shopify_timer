@@ -61,7 +61,7 @@ window.onload = function () {
     // }
 
     var payments = document.getElementsByClassName('alt-payment-list-container');
-    if (typeof payments !== 'undefined') {
+    if (typeof payments[0] !== 'undefined') {
         var paymentsParent = payments[0].parentElement;
         var div = document.createElement('div');
         var span = document.createElement('span');
