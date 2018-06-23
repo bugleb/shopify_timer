@@ -39,7 +39,7 @@ function detectShipping () {
         setTimeout(detectShipping, 100);
     } else {
         console.log('shippingLabel', shippingLabel);
-        shippingLabel[0].innerHTML = '<strong>Standard Shipping</strong><span class="radio__label__primary" data-shipping-method-label-title="Standard Shipping">12 - 20 days for delivery in the United States, and 15-40 days for international orders (depending on location).</span>';
+        shippingLabel[0].innerHTML = '<strong>Standard Shipping</strong><span class="radio__label__primary" data-shipping-method-label-title="Standard Shipping">1-3 weeks for delivery in the United States, and 2-6 days for international orders (depending on location).</span>';
     }
 }
 
