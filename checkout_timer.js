@@ -72,5 +72,5 @@ window.onload = function () {
         paymentsParent.prepend(div);
     }
 
-    detectShipping();
+    // detectShipping();
 };
